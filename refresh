@@ -1,11 +1,11 @@
 blueprint:
-  name: LUX Refresh - Mod by hoangson.io.vn
-  description: Thoi gian update Lux
+  name: LUX Refresh
+  description: Refresh Time for Lux Power
   domain: automation
   input:
     luxpower_device:
       name: Dongle Serial
-      description: this is the serial starting BA...
+      description: This is the serial of Dongle starting BA...
       selector:
         device:
           filter:
@@ -16,6 +16,8 @@ blueprint:
       selector:
         select:
           options:
+            - label: '1'
+              value: '/1'
             - label: '5'
               value: '/5'
             - label: '10'
